@@ -9,12 +9,10 @@
 }
 
 .column-two-thirds {
-  align-items: center;
-  width: 66%;
+  flex-basis: calc((100% / 3) *2);
 }
 
 .column-quarter {
-  padding: 0 0.5%;
   flex-basis: calc(100%/4);
 }
 
@@ -25,4 +23,13 @@ img {
 
 .column-one-third {
   flex-basis: calc(100%/3);
+}
+
+.column-quarter > img {
+  padding: 0 0.5%;
+}
+
+.column-two-thirds > h2,
+p {
+  align-items: center;
 }
