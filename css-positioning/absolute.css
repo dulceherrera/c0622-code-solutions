@@ -17,9 +17,8 @@
 
   /* your code here */
   position: absolute;
-  top: 20px;
-  left: 250px;
-  width: 300px;
+  top: 1rem;
+  right: 1rem;
 }
 
 .joke {
@@ -32,10 +31,8 @@
   text-transform: uppercase;
 
   /* your code here */
-  width: 300px;
-  height: 300px;
   position: absolute;
-  top: 180px;
+  bottom: 0.01rem;
 }
 
 .overlay {
