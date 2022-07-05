@@ -80,3 +80,7 @@ button {
   margin: 0 auto;
   display: block;
 }
+
+.row > h2 {
+  margin-left: 18.5%;
+}
