@@ -20,7 +20,7 @@
 }
 
 .hero-image {
-  background-image: "url(./images/hero.jpg)";
+  background-image: url("./images/hero.jpg");
   background-size: 100%;
   margin-top: 50px;
   margin-left: 5rem;
