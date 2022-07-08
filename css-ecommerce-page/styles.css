@@ -3,18 +3,12 @@ body {
 }
 
 .container {
-  max-width: 1200 px;
+  max-width: 900 px;
   margin: auto;
 }
 
 .row {
   display: flex;
-}
-
-.column-full {
-  flex-basis: 100%;
-  justify-content: center;
-  text-align: center;
 }
 
 .column-one-fourth {
@@ -23,14 +17,8 @@ body {
   justify-content: center;
 }
 
-.align-center {
-  align-items: baseline;
-  text-align: center;
-  align-self: center;
-}
-
-.justify-content {
-  justify-content: center;
+.column-full {
+  flex-basis: 100%;
 }
 
 .padding {
@@ -44,4 +32,12 @@ img {
 
 span {
   color: #ddd;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-align {
+  text-align: center;
 }
