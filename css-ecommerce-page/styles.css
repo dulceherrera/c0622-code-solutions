@@ -13,6 +13,8 @@ body {
 
 .column-full {
   flex-basis: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 .column-one-fourth {
@@ -37,6 +39,7 @@ body {
 
 img {
   width: 100%;
+  object-fit: cover;
 }
 
 span {
