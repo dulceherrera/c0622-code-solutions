@@ -1,0 +1,44 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200 px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+  text-align: center;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: baseline;
+  text-align: center;
+  align-self: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.padding {
+  padding-right: 2.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  color: #ddd;
+}
