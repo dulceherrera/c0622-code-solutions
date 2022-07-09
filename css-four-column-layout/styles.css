@@ -45,10 +45,16 @@ h2 {
 
 .column-full {
   flex-basis: 100%;
-  justify-content: center;
-  text-align: center;
 }
 
 .margins {
   margin: 0 100px;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
