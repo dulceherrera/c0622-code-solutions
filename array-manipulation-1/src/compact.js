@@ -1,8 +1,19 @@
 /* exported compact */
+/* -Make a holder for the new list.
+  -Look at each number from 0, check if the current number is less than the length of the input value,
+  increment it  the current number by 1 each time.
+  -Convert the input value at the current number in a primitive boolean value (true/false) and assign a
+  new variable.
+  -If the new variable is strictly equal to true:
+    -Add the input at current number to the holder.
+  -Return the list to the holder */
 function compact(array) {
+  var arr = [];
   for (var i = 0; i < array.length; i++) {
-    if (isNaN(array[i]) || array[i] === 0 || array[i] === null || array[i] === undefined || array[i] === false || array[i] === '' || array[i] === -Number) {
-      return array.splice(i, 1);
+    var x = Boolean(array[i]);
+    if (x === true) {
+      arr.push(array[i]);
     }
   }
+  return arr;
 }
