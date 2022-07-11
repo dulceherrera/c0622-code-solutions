@@ -1,0 +1,60 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.screens {
+  font-family: Barlow, sans-serif;
+  background-color: #f7f8fa;
+  text-align: center;
+}
+
+.screen {
+  width: 100%;
+}
+
+.column-one-fourth > .icon {
+  width: 25%;
+}
+
+.padding {
+  padding-left: 2rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.margins {
+  margin: 0 100px;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
