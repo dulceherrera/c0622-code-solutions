@@ -8,5 +8,6 @@ function countdown(number) {
   while (number >= 0) {
     arr.push(number);
     number--;
-  } return arr;
+  }
+  return arr;
 }

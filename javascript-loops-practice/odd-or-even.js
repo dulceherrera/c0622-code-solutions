@@ -14,5 +14,6 @@ function oddOrEven(numbers) {
     } else {
       arr.push('odd');
     }
-  } return arr;
+  }
+  return arr;
 }
