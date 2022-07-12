@@ -1,0 +1,38 @@
+body {
+  margin: auto;
+}
+
+.light-on {
+  background-color: #fef9f1;
+}
+
+.bulb-on {
+  background-color: #faea84;
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px #fdf2bc;
+}
+
+.row {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bulb-off {
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+  background-color: #252525;
+}
+
+.light-off {
+  background-color: #111;
+}
