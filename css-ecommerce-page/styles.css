@@ -41,11 +41,7 @@ span {
   align-self: flex-end;
 }
 
-.a,
-.b,
-.c,
-.d,
-.e {
+.color-price {
   display: inline;
   color: black;
 }
