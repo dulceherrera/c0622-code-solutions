@@ -1,10 +1,8 @@
 var $lightbulb = document.querySelector('.bulb-on');
 var $darklight = document.querySelector('.light-on');
-var counter = 0;
 
-function turnLightBulb() {
-  counter++;
-  if (counter % 2 === 0) {
+function turnLightBulb(value) {
+  if ($lightbulb.matches('div.bulb-off')) {
     $lightbulb.className = 'bulb-on';
     $darklight.className = 'light-on';
   } else {
