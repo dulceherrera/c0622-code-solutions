@@ -1,11 +1,15 @@
-var $containerModal = document.querySelector('.container-modal');
+
+const $overlay = document.querySelector('.overlay');
 var $openModal = document.querySelector('.open-modal');
 var $no = document.querySelector('.no');
-function showmodal() {
-  $containerModal.className = 'show-modal container-modal';
-}
+var $modal = document.querySelector('.modal');
 
-$openModal.addEventListener('click', showmodal);
-$no.addEventListener('click', showmodal);
-/* need a function that shows a modal when click a button
-and another for close the modal */
+$openModal.addEventListener('click', function () {
+  $overlay.className = 'overlay show';
+  $modal.className = 'modal showmodal';
+});
+
+$no.addEventListener('click', function () {
+  $overlay.className = 'overlay noshow';
+  $modal.className = 'modal noshowmodal';
+});
