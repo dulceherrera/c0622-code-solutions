@@ -1,0 +1,79 @@
+.no {
+  background-color: #eb5d5d;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px #9a8f8f;
+  width: 20%;
+  height: 2rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  position: relative;
+  top: 6rem;
+  left: 3.4rem;
+  right: 0;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.open-modal {
+  background-color: #4a4ae9;
+  color: white;
+  border: none;
+  border-radius: 2.5px;
+  width: 10rem;
+  height: 2rem;
+  box-shadow: 0 1px 3px #9a8f8f;
+  font-size: 1.2rem;
+}
+
+.no:hover {
+  cursor: pointer;
+}
+
+.open-modal:hover {
+  cursor: pointer;
+}
+
+.show {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.showmodal {
+  max-width: 400px;
+  height: 200px;
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.3rem;
+}
+
+.noshow {
+  display: none;
+}
+
+.noshowmodal {
+  display: none;
+}
