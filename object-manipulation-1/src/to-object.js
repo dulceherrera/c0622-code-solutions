@@ -10,13 +10,7 @@
       -Add the previous value to the holder for the key value pairs
       -Return the object */
 function toObject(keyValuePair) {
-  var arr = [];
-  for (var i = 0; i < keyValuePair.length; i++) {
-    if (i % 2 === 0) {
-      var x = {};
-      x[keyValuePair[i]] = keyValuePair[i + 1];
-      arr.push(x);
-    }
-  }
-  return x;
+  var obj = {};
+  obj[keyValuePair[0]] = keyValuePair[1];
+  return obj;
 }
