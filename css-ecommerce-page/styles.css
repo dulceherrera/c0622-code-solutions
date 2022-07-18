@@ -1,0 +1,65 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.padding {
+  padding-right: 2.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  color: #ddd;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align {
+  text-align: left;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.color-price {
+  display: inline;
+  color: black;
+}
+
+.price {
+  background-color: #fff1e7;
+  border-radius: 5px;
+  border: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.height {
+  height: 3rem;
+}
+
+.width {
+  width: 1300px;
+}
