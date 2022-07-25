@@ -1,14 +1,17 @@
 var $lightbulb = document.querySelector('.bulb-on');
 var $darklight = document.querySelector('.light-on');
+var lightBulbOn = false;
 
-function turnLightBulb(value) {
-  if ($lightbulb.matches('div.bulb-off')) {
-    $lightbulb.className = 'bulb-on';
-    $darklight.className = 'light-on';
-  } else {
+function handleClick(event) {
+  if (lightBulbOn === false) {
     $lightbulb.className = 'bulb-off';
     $darklight.className = 'light-off';
+    lightBulbOn = !lightBulbOn;
+  } else if (lightBulbOn === true) {
+    $lightbulb.className = 'bulb-on';
+    $darklight.className = 'light-on';
+    lightBulbOn = !lightBulbOn;
   }
 }
 
-document.addEventListener('click', turnLightBulb);
+$lightbulb.addEventListener('click', handleClick);
