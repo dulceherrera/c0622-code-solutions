@@ -1,8 +1,9 @@
 /* exported includes */
 function includes(array, value) {
-  if (array.indexOf(value) !== -1) {
-    return true;
-  } else {
-    return false;
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
   }
+  return false;
 }
