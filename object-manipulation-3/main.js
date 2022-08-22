@@ -32,7 +32,7 @@ function createDeck() {
   for (var i = 0; i < suits.length; i++) {
     for (var x = 0; x < rank.length; x++) {
       card.suits = suits[i];
-      card.rank = rank[i];
+      card.rank = rank[x];
       deck.push(card);
       card = { suits: '', rank: '' };
     }
@@ -51,7 +51,7 @@ function shuffleDeck(array) {
 }
 
 console.log('create Deck:', createDeck());
-var gameDeck = createDeck;
+var gameDeck = createDeck();
 console.log('shuffled deck:', shuffleDeck(gameDeck));
 var shuffledGameDeck = shuffleDeck(gameDeck);
 
@@ -66,7 +66,7 @@ function dealCards(deck) {
   return deck;
 }
 
-console.log('deck after dealCards:', dealCards(shuffledGameDeck));
+console.log('final deck:', dealCards(shuffledGameDeck));
 
 function calculateScore() {
   for (var i = 0; i < players.length; i++) {
@@ -83,3 +83,18 @@ function calculateScore() {
 }
 
 calculateScore();
+
+function findWinner() {
+  var winner = { name: '', score: 0 };
+  for (var i = 0; i < players.length; i++) {
+    if (players[i].score > winner.score) {
+      winner.name = players[i].name;
+      winner.score = players[i].score;
+    }
+  }
+  console.log('The winner is ' + winner.name + '!');
+  return winner;
+}
+
+console.log('winner:', findWinner());
+console.log('players:', players);
